@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // - Connection to Database and initilize the app after the connection is Ready.
 isConnectionReady = false;
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/friends-ville",
+  process.env.MONGODB_URI || "mongodb://heroku_qff7x6qr:56hlb6iv223pub6481sk018ed5@ds125574.mlab.com:25574/heroku_qff7x6qr",
   function(err, client) {
     if (err) {
       console.log(err);
