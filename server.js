@@ -60,7 +60,7 @@ function createToken(user, res) {
   if (user.token === undefined || user.token === null) {
     var claims = {
       sub: user._id,
-      iss: "https://friends-ville.herokuapp.com"
+      iss: "https://friends-ville-api.herokuapp.com"
     };
     if (user.isAdmin === false) {
       claims.permissions = ["see-profile", "messaging", "homepage"];
